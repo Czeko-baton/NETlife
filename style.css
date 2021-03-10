@@ -2,14 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-  background: #000;
+  background: darkgray;
   min-height: 200vh;
 }
 
-nav {
+/* HEADER --------------------------------------------------------------------------------------------------- */
+
+header {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -23,12 +26,14 @@ nav {
   z-index: 4;
 }
 
-nav.sticky {
+header.sticky {
   padding: 15px 40px;
-  background: #18181a;
+  /* background: #0093ff; */
+  background: rgb(41, 41, 41);
+  /* color: #009e4d; */
 }
 
-nav a .logo {
+header a .logo {
   position: relative;
   height: 130px;
   margin-top: -26.25px;
@@ -36,28 +41,31 @@ nav a .logo {
   transition: 0.5s;
 }
 
-.nav-links {
+.navbar-links {
   transition: 0.5s;
 }
 
-nav ul {
+header ul {
   position: relative;
   display: flex;
   justify-content: center;
   align-self: center;
 }
 
-nav ul li {
+header ul li {
   position: relative;
   list-style: none;
   transition: 0.5s;
+  border-radius: 10px;
+  padding: 10px 0;
 }
 
-nav ul li:hover {
+header ul li:hover {
   transform: translateY(-3px);
+  background: rgba(256, 256, 256, 0.2);
 }
 
-nav ul li a {
+header ul li a {
   position: relative;
   margin: 0 15px;
   text-decoration: none;
@@ -68,9 +76,9 @@ nav ul li a {
   font-size: 18px;
 }
 
-nav .liActive,
-nav.sticky .liActive {
-  color: rgb(22, 157, 81);
+header .liActive,
+header.sticky .liActive {
+  color: #de1796;
   font-weight: bold;
 }
 .toggle-button {
@@ -111,7 +119,7 @@ nav.sticky .liActive {
   transform: translateY(12px);
 }
 
-nav.sticky > .toggle-button {
+header.sticky > .toggle-button {
   top: 30px;
 }
 
@@ -126,14 +134,14 @@ nav.sticky > .toggle-button {
   }
   .toggle-button.active .toggle-button-sandwich::before {
     transform: rotate(45deg) translate(26.25px, -26.25px);
-    background: rgb(22, 157, 81);
+    background: #de1796;
   }
   .toggle-button.active .toggle-button-sandwich::after {
     transform: rotate(-45deg) translate(26.25px, 26.25px);
-    background: rgb(22, 157, 81);
+    background: #de1796;
   }
 
-  .nav-links {
+  .navbar-links {
     display: flex;
     opacity: 0;
     height: auto;
@@ -141,27 +149,27 @@ nav.sticky > .toggle-button {
     max-height: 0px;
     overflow: hidden;
   }
-  nav {
+  header {
     flex-direction: column;
     align-items: flex-start;
   }
-  .nav-links ul {
+  .navbar-links ul {
     flex-direction: column;
     width: 100%;
     padding-top: 20px;
   }
-  .nav-links li {
+  .navbar-links li {
     text-align: center;
     padding: 1rem;
   }
-  .nav-links li a {
+  .navbar-links li a {
     padding: 0.5rem 1rem;
   }
-  .nav-links.active {
+  .navbar-links.active {
     max-height: 305px;
     opacity: 1;
   }
-  nav.active {
+  header.active {
     background-color: #18181a;
   }
 }
