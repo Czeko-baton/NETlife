@@ -72,7 +72,7 @@ header ul li {
 header .headerContact {
   position: fixed;
   right: 100px;
-  top: 30px;
+  top: 25px;
   transition: 0.5s;
 }
 
@@ -201,6 +201,11 @@ header.sticky > .toggle-button {
   }
   header.active {
     background-color: rgb(41, 41, 41);
+  }
+
+  header .headerContact {
+    opacity: 0;
+    transform: translateY(-40px);
   }
 }
 
