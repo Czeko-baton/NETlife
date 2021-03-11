@@ -45,6 +45,11 @@ header.sticky a .logo {
   height: 80px;
 }
 
+header.sticky .headerContact {
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
 .navbar-links {
   transition: 0.5s;
 }
@@ -63,6 +68,26 @@ header ul li {
   border-radius: 10px;
   padding: 10px 0;
   margin: 0 5px;
+}
+header .headerContact {
+  position: fixed;
+  right: 100px;
+  top: 30px;
+  transition: 0.5s;
+}
+
+header .headerContact a {
+  color: ivory;
+  padding: 0 15px;
+  transition: 0.5s;
+}
+header .headerContact a i {
+  font-size: 1.2em;
+  transition: 0.5s;
+}
+
+header .headerContact a:hover > i {
+  color: #de1796;
 }
 
 header ul li:hover {
