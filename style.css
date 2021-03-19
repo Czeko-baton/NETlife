@@ -399,6 +399,9 @@ header.sticky > .toggle-button {
   width: 100%;
   color: ivory;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .internet-info h1 {
   font-size: 36px;
