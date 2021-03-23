@@ -31,7 +31,7 @@ header {
 header.sticky {
   padding: 15px 40px;
   /* background: #0093ff; */
-  background: rgb(41, 41, 41);
+  background: #292929;
   /* color: #009e4d; */
 }
 
@@ -200,7 +200,7 @@ header.sticky > .toggle-button {
     opacity: 1;
   }
   header.active {
-    background-color: rgb(41, 41, 41);
+    background-color: #292929;
   }
 
   header .headerContact {
@@ -372,6 +372,196 @@ header.sticky > .toggle-button {
   }
 }
 
+/* WHAT WE DO ---------------------------------------------------------------------------------------- */
+/* main part of the  blocks  */
+.card_holder {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20rem;
+  background-color: #f7f7f7;
+  color: rgb(41, 41, 41);
+  margin: 20px auto;
+  align-self: flex-start;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card_name {
+  font-size: 1.1em;
+  text-align: center;
+  border-bottom: solid #de1796 1px;
+}
+
+.card_img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card_contents {
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+.card_read_more {
+  display: block;
+  opacity: 0;
+  height: auto;
+  max-height: 0px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.card_read_more--open {
+  opacity: 1;
+  max-height: 150px;
+  margin-bottom: 15px;
+}
+
+.read_more_btn {
+  display: inline-block;
+  color: #eee;
+  background-color: #de1796;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+br {
+  margin-bottom: 0.8rem;
+}
+
+.read_more_btn:hover {
+  /* background-color: #fff; */
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* APPOINTMENT SECTION -------------------------------------------------------------- */
+
+.appointment-container {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.appointment-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    url('./Apple-Hardware-Updrades.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 50%;
+}
+.appointment-text {
+  background: #0093ff;
+  height: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.appointment-text h3 {
+  color: ivory;
+  font-size: 36px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+.appointment-text p {
+  font-size: 20px;
+  color: ivory;
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-btn {
+  display: inline-block;
+  color: #eee;
+  padding: 0.6rem 1.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.contact-btn:hover {
+  /* background-color: #fff; */
+  /* box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); */
+  transform: translateX(-10px);
+  color: white;
+}
+
+.contact-btn .arrow {
+  font-weight: lighter;
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.contact-btn:hover > .arrow {
+  opacity: 1;
+}
+
+@media (max-width: 1040px) {
+  .appointment-text,
+  .appointment-image {
+    /* width: 100%; */
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .appointment-container {
+    flex-direction: column;
+    width: 550px;
+  }
+  .appointment-text,
+  .appointment-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .appointment-container {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .appointment-image {
+    height: 400px;
+  }
+  .appointment-text h3 {
+    font-size: 26px;
+  }
+  .appointment-text p {
+    font-size: 18px;
+  }
+}
+
 /* MIDDLE SECTION ------------------------------------------------------------------------------------------  */
 
 .emptyDiv {
@@ -434,7 +624,7 @@ header.sticky > .toggle-button {
   overflow: hidden;
   padding: 50px 0;
   box-sizing: border-box;
-  background-color: rgb(41, 41, 41);
+  background-color: #292929;
 }
 
 .inner-footer {
