@@ -565,7 +565,7 @@ br {
 /* MIDDLE SECTION ------------------------------------------------------------------------------------------  */
 
 .emptyDiv {
-  height: 1980px;
+  height: 100px;
   width: 100vw;
   background: lightsteelblue;
 }
