@@ -8,7 +8,7 @@
 }
 
 body {
-  background: darkgray;
+  background: #333;
   min-height: 200vh;
 }
 
@@ -373,6 +373,7 @@ header.sticky > .toggle-button {
 }
 
 /* WHAT WE DO ---------------------------------------------------------------------------------------- */
+
 /* main part of the  blocks  */
 .card_holder {
   display: flex;
@@ -828,5 +829,17 @@ br {
   margin: 0 auto;
 }
 
-/* nothing here  */
-/* did not cound one of the contributions  */
+.spacebar {
+  width: 100vw;
+  height: 150px;
+}
+.crossed-tools-logo {
+  height: 35px;
+  width: 35px;
+  margin: 20px auto;
+}
+
+.crossed-tools-logo i {
+  color: #de1796;
+  font-size: 30px;
+}

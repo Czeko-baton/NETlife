@@ -108,3 +108,22 @@ const resetTimer = () => {
 };
 
 let timer = setInterval(autoPlay, 8000);
+
+//  Blocks read more/less -----------------------------------------------------------------------------
+const btn = document.querySelector('.read_more_btn');
+const text = document.querySelector('.card_read_more');
+const cardHolder = document.querySelector('.card_holder');
+
+cardHolder.addEventListener('click', (e) => {
+  const current = e.target;
+
+  const isReadMoreBtn = current.className.includes('read_more_btn');
+  if (!isReadMoreBtn) return;
+  const currentText = e.target.parentNode.querySelector('.card_read_more');
+
+  currentText.classList.toggle('card_read_more--open');
+
+  current.textContent = current.textContent.includes('Read More...')
+    ? 'Read Less...'
+    : 'Read More...';
+});
