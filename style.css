@@ -374,6 +374,37 @@ header.sticky > .toggle-button {
 
 /* WHAT WE DO ---------------------------------------------------------------------------------------- */
 
+/* header what we do  */
+.header-what-we-do {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+.header-what-we-do h3 {
+  color: #eee;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.header-what-we-do p {
+  color: #eee;
+  font-size: 17px;
+  text-align: center;
+}
+@media (max-width: 550px) {
+  .header-what-we-do {
+    width: 90vw;
+  }
+  .header-what-we-do h3 {
+    font-size: 30px;
+  }
+  .header-what-we-do p {
+    font-size: 15px;
+  }
+}
+
 /* main part of the  blocks  */
 .card_holder {
   display: flex;
@@ -453,6 +484,54 @@ br {
   /* background-color: #fff; */
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
   transform: translateY(-3px);
+}
+
+/* SLOW INTERNET ------------------------------------------------------------------------------------------  */
+.internet-container {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background: lightsteelblue;
+}
+.internet-picture {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('./slow-internet.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+}
+.internet-info {
+  width: 100%;
+  color: ivory;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.internet-info h1 {
+  font-size: 36px;
+  padding: 30px 20px;
+}
+.internet-info h3 {
+  font-size: 26px;
+  padding: 10px 20px;
+}
+.internet-info p {
+  font-size: 20px;
+  padding: 20px 20px;
+}
+@media (max-width: 600px) {
+  .info-to-hide {
+    display: none;
+  }
+  .internet-info h1 {
+    font-size: 30px;
+  }
+  .internet-info h3 {
+    font-size: 22px;
+  }
 }
 
 /* APPOINTMENT SECTION -------------------------------------------------------------- */
@@ -560,61 +639,6 @@ br {
   }
   .appointment-text p {
     font-size: 18px;
-  }
-}
-
-/* MIDDLE SECTION ------------------------------------------------------------------------------------------  */
-
-.emptyDiv {
-  height: 100px;
-  width: 100vw;
-  background: lightsteelblue;
-}
-
-.internet-container {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  background: lightsteelblue;
-}
-.internet-picture {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('./slow-internet.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
-}
-.internet-info {
-  width: 100%;
-  color: ivory;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.internet-info h1 {
-  font-size: 36px;
-  padding: 30px 20px;
-}
-.internet-info h3 {
-  font-size: 26px;
-  padding: 10px 20px;
-}
-.internet-info p {
-  font-size: 20px;
-  padding: 20px 20px;
-}
-@media (max-width: 600px) {
-  .info-to-hide {
-    display: none;
-  }
-  .internet-info h1 {
-    font-size: 30px;
-  }
-  .internet-info h3 {
-    font-size: 22px;
   }
 }
 
@@ -829,9 +853,13 @@ br {
   margin: 0 auto;
 }
 
+/* SPACE Tool Bar --------------------------------------------------------------------- */
 .spacebar {
-  width: 100vw;
-  height: 150px;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 60px auto 0 auto;
 }
 .crossed-tools-logo {
   height: 35px;
@@ -842,4 +870,10 @@ br {
 .crossed-tools-logo i {
   color: #de1796;
   font-size: 30px;
+}
+.line {
+  background-color: #eee;
+  height: 1px;
+  width: 100px;
+  right: 0px;
 }
