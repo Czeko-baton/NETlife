@@ -411,6 +411,8 @@ header.sticky > .toggle-button {
   align-items: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .card {
