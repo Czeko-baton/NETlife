@@ -248,7 +248,7 @@ header.sticky > .toggle-button {
 
 .container {
   max-width: 1070px;
-  margin: auto;
+  margin: auto 0 auto 5%;
 }
 
 .home .container {
@@ -257,7 +257,6 @@ header.sticky > .toggle-button {
 
 .home .caption {
   width: 60%;
-  margin-left: 15px;
 }
 
 .home .caption h1 {
@@ -560,6 +559,7 @@ br {
 
 .appointment-container {
   width: 90vw;
+  max-width: 1360px;
   height: auto;
   display: flex;
   margin: 20px auto;
@@ -574,11 +574,13 @@ br {
   background-position: center;
   height: 600px;
   width: 50%;
+  max-width: 680px;
 }
 .appointment-text {
   background: #0093ff;
   height: 600px;
   width: 50%;
+  max-width: 680px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
