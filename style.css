@@ -695,6 +695,80 @@ br {
   }
 }
 
+/* UPGRADE HARD DISK ------------------------------------------------------------------------------------ */
+.disk_upgrade {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('./galaxy_of_numbers.jpg') repeat fixed center 100%;
+}
+.disk_upgrade_header h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.disk_upgrade_container {
+  padding: 5% 0 6% 0;
+  display: flex;
+  align-items: center;
+}
+
+.ssdVsHdd {
+  width: 50%;
+  height: auto;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+  margin: 0 3%;
+}
+
+.ssdVsHdd img {
+  width: 100%;
+  border-radius: 8px;
+}
+.ssdText {
+  width: 50%;
+  margin: 0 3%;
+  color: white;
+}
+.ssdText h1 {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.ssdText p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  text-align: justify;
+}
+.ssdText ul {
+  font-size: 18px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+.ssdText li {
+}
+@media (max-width: 990px) {
+  .disk_upgrade_container {
+    flex-direction: column;
+  }
+  .ssdText,
+  .ssdVsHdd {
+    width: 80%;
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 500px) {
+  .ssdText,
+  .ssdVsHdd {
+    width: 90%;
+  }
+  .ssdText h1 {
+    font-size: 30px;
+  }
+}
+
 /* DIRECTIONS ---------------------------------------------------------------------------------------- */
 .directions {
   position: relative;
