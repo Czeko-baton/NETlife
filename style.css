@@ -1143,27 +1143,37 @@ br {
   margin-bottom: 5px;
   color: #de1796;
 }
-
-.contact .contact-form {
-  width: 60%;
+.message {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  background-color: #0093ff;
+  margin-top: 30px;
+  padding: 40px 20px;
+}
+.message .contact-form {
+  width: 55%;
+  max-width: 1000px;
   padding: 40px;
+  margin: 30px 0;
   background: #fff;
+  border-radius: 8px;
 }
 
-.contact .contact-form h2 {
+.message .contact-form h2 {
   font-size: 30px;
   color: #333;
   font-weight: 500;
 }
 
-.contact .contact-form .input-box {
+.message .contact-form .input-box {
   position: relative;
   margin-top: 10px;
   width: 100%;
 }
 
-.contact .contact-form .input-box input,
-.contact .contact-form .input-box textarea {
+.message .contact-form .input-box input,
+.message .contact-form .input-box textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -1171,10 +1181,11 @@ br {
   border: none;
   border-bottom: 2px solid #333;
   outline: none;
-  resize: none;
+  resize: vertical;
+  min-height: 30px;
 }
 
-.contact .contact-form .input-box span {
+.message .contact-form .input-box span {
   position: absolute;
   left: 0;
   padding: 5px 0;
@@ -1184,15 +1195,15 @@ br {
   transition: 0.5s;
   color: #666;
 }
-.contact .contact-form .input-box input:focus ~ span,
-.contact .contact-form .input-box textarea:focus ~ span,
-.contact .contact-form .input-box input:valid ~ span,
-.contact .contact-form .input-box textarea:valid ~ span {
+.message .contact-form .input-box input:focus ~ span,
+.message .contact-form .input-box textarea:focus ~ span,
+.message .contact-form .input-box input:valid ~ span,
+.message .contact-form .input-box textarea:valid ~ span {
   color: #e91e63;
   font-size: 12px;
   transform: translateY(-20px);
 }
-.contact .contact-form .input-box input[type='submit'] {
+.message .contact-form .input-box input[type='submit'] {
   width: 100px;
   background: #de1796;
   color: #fff;
@@ -1201,7 +1212,20 @@ br {
   padding: 10px;
   font-size: 18px;
 }
-
+.message .contact-form-text {
+  color: #fff;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.message .contact-form-text h1 {
+  font-size: 30px;
+}
+.message .contact-form-text p {
+  font-size: 20px;
+}
 @media (max-width: 991px) {
   .contact {
     padding: 50px;
@@ -1214,9 +1238,11 @@ br {
     margin-bottom: 40px;
   }
 
-  .contact .contact-container .contact-info,
-  .contact .contact-container .contact-form {
+  .contact .contact-container .contact-info {
     width: 100%;
+  }
+  .message .contact-form {
+    width: 80%;
   }
 }
 .contact .map-box {
