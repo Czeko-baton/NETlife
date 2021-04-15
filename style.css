@@ -419,7 +419,7 @@ header.sticky > .toggle-button {
 .card {
   width: 20rem;
   /* background-color: #f7f7f7; */
-  background: linear-gradient(to top, #f7f7f7 50%, transparent 50%);
+  background: linear-gradient(to top, #f7f7f7 90%, transparent 10%);
   color: rgb(41, 41, 41);
   margin: 20px auto;
   align-self: flex-start;
@@ -1241,11 +1241,34 @@ br {
   .contact .contact-container .contact-info {
     width: 100%;
   }
+
+  .contact .map-box {
+    margin-top: 50px;
+    border-radius: 8px;
+  }
+  .message {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .message .contact-form {
     width: 80%;
   }
+  .message .contact-form-text {
+    width: 80%;
+    padding: 20px 0;
+  }
 }
-.contact .map-box {
-  margin-top: 50px;
-  border-radius: 8px;
+@media (max-width: 600px) {
+  .message .contact-form-text {
+    width: 90vw;
+  }
+  .message .contact-form-text h1 {
+    font-size: 25px;
+  }
+  .message .contact-form-text p {
+    font-size: 16px;
+  }
+  .message .contact-form {
+    width: 90vw;
+  }
 }
