@@ -127,3 +127,10 @@ cardHolder.addEventListener('click', (e) => {
     ? 'Read Less...'
     : 'Read More...';
 });
+
+// set date ----------------------------------------------------------------------------------
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
+
+//  close links ---------------------------------------------------------------------------------
+const navToggle = document.querySelector('.toggle-button');
