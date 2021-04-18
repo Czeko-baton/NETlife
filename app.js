@@ -16,7 +16,7 @@ toggleButton.addEventListener('click', (e) => {
   toggleButton.classList.toggle('active');
 });
 
-links.addEventListener('click', () => {
+navbarLinks.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
   header.classList.toggle('active');
   toggleButton.classList.toggle('active');
