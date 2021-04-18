@@ -17,9 +17,11 @@ toggleButton.addEventListener('click', (e) => {
 });
 
 navbarLinks.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active');
-  header.classList.toggle('active');
-  toggleButton.classList.toggle('active');
+  if (window.innerWidth <= 700) {
+    navbarLinks.classList.toggle('active');
+    header.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+  }
 });
 
 // Carousell --------------------------------------------------------------------------------------------
