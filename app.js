@@ -7,9 +7,16 @@ window.addEventListener('scroll', () => {
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const header = document.querySelector('header');
+const links = document.querySelector('.links');
 
 toggleButton.addEventListener('click', (e) => {
   e.preventDefault();
+  navbarLinks.classList.toggle('active');
+  header.classList.toggle('active');
+  toggleButton.classList.toggle('active');
+});
+
+links.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
   header.classList.toggle('active');
   toggleButton.classList.toggle('active');
@@ -131,6 +138,3 @@ cardHolder.addEventListener('click', (e) => {
 // set date ----------------------------------------------------------------------------------
 const date = document.getElementById('date');
 date.innerHTML = new Date().getFullYear();
-
-//  close links ---------------------------------------------------------------------------------
-const navToggle = document.querySelector('.toggle-button');
