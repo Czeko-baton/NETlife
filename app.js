@@ -7,7 +7,6 @@ window.addEventListener('scroll', () => {
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const header = document.querySelector('header');
-const links = document.querySelector('.links');
 
 toggleButton.addEventListener('click', (e) => {
   e.preventDefault();
@@ -22,6 +21,25 @@ navbarLinks.addEventListener('click', () => {
     header.classList.toggle('active');
     toggleButton.classList.toggle('active');
   }
+});
+
+// # smooth scroll ------------------
+const links = document.querySelectorAll('.links');
+
+links.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    // prent default action
+    e.preventDefault();
+
+    //navigate to specific spot
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+    let position = element.offsetTop;
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+  });
 });
 
 // Carousell --------------------------------------------------------------------------------------------
