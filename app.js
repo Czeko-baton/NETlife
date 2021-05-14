@@ -159,9 +159,4 @@ cardHolder.addEventListener('click', (e) => {
 const date = document.getElementById('date');
 date.innerHTML = new Date().getFullYear();
 
-// ssssss
-// sadad
-// bunm bumm
-// ssss s s s s
-// asdasd asd asd
-//  no wau of
+// sedond one
