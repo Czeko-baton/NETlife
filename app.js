@@ -158,10 +158,3 @@ cardHolder.addEventListener('click', (e) => {
 // set date ----------------------------------------------------------------------------------
 const date = document.getElementById('date');
 date.innerHTML = new Date().getFullYear();
-
-// here we go again
-// sadasd
-// hehehehe
-// asdasdasdadsadasda
-// here we go again
-// asddin even more stugg han befote

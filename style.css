@@ -6,6 +6,9 @@
   text-decoration: none;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   /* background: #eff0f0; */
@@ -91,7 +94,8 @@ header .headerContact a:hover > i {
 
 header ul li a:hover {
   transform: translateY(-3px);
-  background: rgba(256, 256, 256, 0.2);
+  /* background: rgba(256, 256, 256, 0.2); */
+  color: #de1796;
 }
 
 header ul li a {
