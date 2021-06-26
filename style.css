@@ -96,6 +96,7 @@ header ul li a:hover {
   transform: translateY(-3px);
   /* background: rgba(256, 256, 256, 0.2); */
   color: #de1796;
+  /* font-size: 1em; */
 }
 
 header ul li a {
@@ -278,13 +279,23 @@ header.sticky > .toggle-button {
 
 .home .caption p {
   font-size: 18px;
-  margin: 15px 0 30px;
+  margin: 8px 0;
 }
 
-.home .slide.active .caption p {
+.home .slide.active .caption .p1 {
   opacity: 0;
   animation: captionText 1s ease forwards;
   animation-delay: 1.6s;
+}
+.home .slide.active .caption .p2 {
+  opacity: 0;
+  animation: captionText 1s ease forwards;
+  animation-delay: 2s;
+}
+.home .slide.active .caption .p3 {
+  opacity: 0;
+  animation: captionText 1s ease forwards;
+  animation-delay: 2.4s;
 }
 
 .home .caption a {
@@ -498,6 +509,7 @@ h1 {
   transition: all 0.5s;
   cursor: pointer;
   border-radius: 8px;
+  margin-top: 5px;
 }
 br {
   margin-bottom: 0.8rem;
