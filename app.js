@@ -188,3 +188,4 @@ tl.fromTo('.caption', { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
 // walic kapcie w podlozd
 // jezu
 // apple apple
+// puk puk
