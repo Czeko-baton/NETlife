@@ -189,3 +189,4 @@ tl.fromTo('.caption', { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
 // jezu
 // apple apple
 // puk puk
+// dawaj wiecej jeszcze
