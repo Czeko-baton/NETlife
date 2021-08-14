@@ -192,3 +192,4 @@ tl.fromTo('.caption', { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
 // dawaj wiecej jeszcze
 // no tego nie wiedzialems
 // tego tak nie zostawie
+// ggggg
