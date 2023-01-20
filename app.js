@@ -43,11 +43,33 @@ links.forEach((link) => {
 });
 
 // Carousell --------------------------------------------------------------------------------------------
+
+
+// preload img -----------------------
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "slow-internet.jpg",
+    "city-cityscape-space-building-skyscraper-computer-783904-wallhere.com.jpg",
+    "broken-laptops.jpg",
+    "broken-broken-glass-technology-iPhone-monochrome-1578235-wallhere.com.jpg"
+)
+
+
 const slides = document.querySelector('.slider').children;
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const indicator = document.querySelector('.indicator');
 let index = 0;
+
+
 
 // buttons control -------------------------
 
@@ -167,32 +189,3 @@ tl.to('.intro-slider', { y: '-100%', duration: 1.5, delay: 0.5 });
 tl.to('.intro', { y: '-100%', duration: 1 }, '-=1.1');
 tl.fromTo('header', { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo('.caption', { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
-
-// i understand, not much here
-// adding it
-// pus
-// ano
-// git add
-// hehs
-// yah yeah, stfu
-// i know but haey
-// at least one
-// xd
-// how long yet
-// day 4
-// day ?
-// day 5
-// don't even know
-// day 6
-// console.log();
-// yasss
-// git pis bass
-// wal
-// so long
-// i was not here for so monay days
-// hueee
-
-// szsdsd
-// i don't even know how far i am
-// HashChangeEvent, not sure when i was here last time
-// not even think

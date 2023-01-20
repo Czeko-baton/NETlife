@@ -1,7 +1,13 @@
-# Marcin-website
+# NETLife Website
 
-This project is for Marcin, for his new buisness
+This project is for friend's business. 
+Project is only a draft, not actual website of the business.
 
-## First action
+## No frameworks, no libraries
+Project has been written without any frameworks nad libraries to practice the basic knowledge of Html, CSS ans JavaScript.
 
-We made stock view of website to prepare for another components
+
+## AWS
+NETlife website is run on Amazon Web Services.
+Website is only for showcase purposes in portfolio.
+

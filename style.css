@@ -437,8 +437,7 @@ header.sticky > .toggle-button {
 
 .card {
   width: 20rem;
-  /* background-color: #f7f7f7; */
-  background: linear-gradient(to top, #f7f7f7 90%, transparent 10%);
+  background: repeating-linear-gradient(to bottom, transparent, transparent 12rem, #f7f7f7 12rem, #f7f7f7);
   color: rgb(41, 41, 41);
   margin: 20px auto;
   align-self: flex-start;
@@ -463,8 +462,12 @@ header.sticky > .toggle-button {
 .card-img-container {
   max-height: 12rem;
   overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  -webkit-transform: scale(1); 
+   transform: scale(1);
 }
 .card:hover > .card-img-container .card_img {
+  -webkit-transform: scale(1.05);
   transform: scale(1.05);
   opacity: 1;
 }
@@ -1305,6 +1308,7 @@ br {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   z-index: 100;
 }
 .intro-text {
@@ -1312,6 +1316,9 @@ br {
   font-family: 'Heebo', sans-serif;
   font-size: 2rem;
   /* font-weight: bold; */
+}
+.titleInIntro{
+  font-size: 5rem;
 }
 
 .intro-slider {
